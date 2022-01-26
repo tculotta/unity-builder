@@ -1,3 +1,5 @@
+choco install git
+
 # Activate Unity
 & "c:\steps\activate.ps1"
 
