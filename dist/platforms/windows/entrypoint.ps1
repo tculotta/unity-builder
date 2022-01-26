@@ -1,4 +1,4 @@
-choco install git
+& "C:\ProgramData\chocolatey\bin\choco.exe" install git
 
 # Activate Unity
 & "c:\steps\activate.ps1"
