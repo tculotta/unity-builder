@@ -2,6 +2,14 @@ name: 'Unity - Builder'
 author: Webber Takken <webber@takken.io>
 description: 'Build Unity projects for different platforms.'
 inputs:
+  exportPackageName:
+    required: false
+    default: ''
+    description: 'The name of the exported Unity package.'
+  exportPackageContents:
+    required: false
+    default: ''
+    description: 'The contents of the Unity project to export as a Unity package.'
   unityVersion:
     required: false
     default: 'auto'

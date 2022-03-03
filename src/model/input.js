@@ -45,6 +45,14 @@ class Input {
     return core.getInput('version') || '';
   }
 
+  static get exportPackageName() {
+    return core.getInput('exportPackageName') || '';
+  }
+
+  static get exportPackageContents() {
+    return core.getInput('exportPackageContents') || '';
+  }
+
   static get androidVersionCode() {
     return core.getInput('androidVersionCode');
   }

@@ -5,7 +5,21 @@
 #
 
 source /steps/activate.sh
-source /steps/build.sh
+if [ -z "$EXPORT_PACKAGE_NAME" ]; then 
+  #
+  # User has not provided EXPORT_* parameters therefore 
+  # expected action is to build the solution.
+  #
+
+  source /steps/build.sh
+else
+  #
+  # User has provided EXPORT_* parameters therefore 
+  # expected action is to export a unity package.
+  #
+
+  source /steps/export.sh
+fi
 source /steps/return_license.sh
 
 #

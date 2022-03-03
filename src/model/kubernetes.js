@@ -221,6 +221,14 @@ class Kubernetes {
                     value: this.buildParameters.platform,
                   },
                   {
+                    name: 'EXPORT_PACKAGE_NAME',
+                    value: this.buildParameters.exportPackageName,
+                  },
+                  {
+                    name: 'EXPORT_PACKAGE_CONTENTS',
+                    value: this.buildParameters.exportPackageContents,
+                  },
+                  {
                     name: 'ANDROID_VERSION_CODE',
                     value: this.buildParameters.androidVersionCode.toString(),
                   },

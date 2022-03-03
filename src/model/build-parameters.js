@@ -39,6 +39,8 @@ class BuildParameters {
       buildFile,
       buildMethod: Input.buildMethod,
       buildVersion,
+      exportPackageName: Input.exportPackageName,
+      exportPackageContents: Input.exportPackageContents,
       androidVersionCode,
       androidKeystoreName: Input.androidKeystoreName,
       androidKeystoreBase64: Input.androidKeystoreBase64,
